@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestView">
+            <connections>
+                <outlet property="label" destination="s6J-bJ-TNF" id="z0S-hk-mZS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_diamond_gallery_normal" translatesAutoresizingMaskIntoConstraints="NO" id="O5B-F0-lYw">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6J-bJ-TNF">
+                    <rect key="frame" x="19" y="8" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="s6J-bJ-TNF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2Df-hw-Hxa"/>
+                <constraint firstItem="s6J-bJ-TNF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Dzp-jO-TVO"/>
+                <constraint firstAttribute="bottom" secondItem="O5B-F0-lYw" secondAttribute="bottom" id="RCZ-mz-SmW"/>
+                <constraint firstItem="O5B-F0-lYw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="abQ-j9-hQD"/>
+                <constraint firstAttribute="trailing" secondItem="O5B-F0-lYw" secondAttribute="trailing" id="bqw-63-V8E"/>
+                <constraint firstItem="O5B-F0-lYw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fcW-N8-d6s"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_diamond_gallery_normal" width="375" height="160"/>
+    </resources>
+</document>
